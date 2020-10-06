@@ -8,7 +8,7 @@ class App extends Component {
 constructor() {
   super();
   this.state = {
-    route: 'portfolio',
+    route: 'bio',
   }
   }
 
@@ -33,10 +33,23 @@ onRouteChange = (route) => {
         </div>
         : ( route === 'bio' ? <div>
           <h2>About Me</h2><p>
-          Enthusiastic team player motivated by technology's capacity to accelerate social and environmental change. Physicist with diverse experience in software design and full stack development. Strong qualitative and quantitative research tool-set. Mostly using Python and React. I also human very well.</p>
-          <h2>Tools & Technical Skills</h2><p>React, Python, Swift, Data Analysis, AWS, Smart Contracts, Machine Learning, Embedded Software, Control Systems</p>
-          <h2>Human Skills</h2><p>Workshop facilitation, Design thinking, Conflict resolution, Free-association narrative interviews, open, honest and direct.</p>
-          <h2>Interests</h2><p>Federeated Learning, Baysian Inference, Data Fusion, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Wallace & Gromit</p>
+          Enthusiastic team player pursuing a career at the intersection of AI and sustainability.
+          I'm motivated by technology's capacity to accelerate social and environmental change. 
+          I'd like to work in a high performance organisation on important difficult problems. 
+          A job that allows me to flex my mathematics muscles is a must💪.
+           <strong> I'm particularly interested in working on industrial scale applications of privacy-preserving machine learning and data fusion.</strong> 
+          <ul>
+            <li>I'm a physicist with diverse experience in all aspects of software production.</li>
+            <li>Strong qualitative and quantitative research tool-set.</li>
+            <li>Thorough, diligent and thoughtful.</li>
+            <li>Mostly using Python and React.</li>
+          </ul>
+          I also human very well.</p>
+          <h2>Tools & Technical Skills</h2>
+          <p className="mb1">With Proffesional Experience: React, Python, Swift, SQL, Data Analysis, AWS.</p>
+          <p className="mt0">Academic and hobby: C, Machine Learning, Smart Contracts, 32-bit microcontrollers.</p>
+          <h2>Human Skills</h2><p>Workshop facilitation, Design thinking, Free-association narrative interviews, clear and confident presentation style, open, honest and direct.</p>
+          <h2>Relevant Interests</h2><p>Federeated Learning, Baysian Inference, Data Fusion, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Non-violent Communication, Wallace & Gromit</p>
           </div> 
         : ( route === 'portfolio' ? 
           <div>
@@ -51,7 +64,7 @@ onRouteChange = (route) => {
           <PortfolioItem date={'May 2017-September 2019'} 
                     title={'Arrk Group'} 
                     location={'Manchester'} 
-                    body={['Software design, development and data analysis. Product research and business strategy. Swift, Kotlin, Python, SQL, PowerBI, AWS, Jenkins, JIRA. Achievements include:',
+                    body={['Software design, development and data analysis. Product research and business strategy. Swift, Kotlin, Python, SQL, PowerBI, AWS, CircleCI, JIRA. Achievements include:',
                      <ul>
                      <li>Instrumental in the design, delivery and continual development of a B2C lifestyle and finance platform, currently with 900,000+ users. Worked closely with two others to win the contract for this project worth several million pounds.</li>
                      <li>Helped design and implement a platform-wide analytics and data strategy.</li>
