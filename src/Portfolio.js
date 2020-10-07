@@ -8,7 +8,7 @@ import React from 'react';
 		<h2>{title}</h2>
 		<h3>{location}</h3>
 		<h4>{detail}</h4>
-		<p className="">{body}</p>
+		{body}
 		</article>	
   		</div>
 
@@ -16,12 +16,9 @@ import React from 'react';
 }
 
 
-const Button = ({ currentSelection, text, onClick }) => {
-		console.log('test' + {currentSelection})
-
-	// console.log({currentSelection}==='Proffesional')
+const Button = ({ text, active, onClick }) => {
   return(
- <a class={{currentSelection}==={text} ? "f6 link dim ph3 pv2 mb2 dib white bg-black" : "f6 link dim ph3 pv2 mb2 dib white bg-black"} onClick={onClick} href="#0">{text}</a>
+ <a className={active ?  "f6 link ph3 pv2 mb2 dib black bg-white ba bw1 mr1 " :"f6 link ph3 pv2 mb2 dib white bg-black mr1 ba bw1 b--black bg-animate hover-bg-white hover-black"} onClick={onClick} href="#0">{text}</a>
   )
 }
 
@@ -30,7 +27,7 @@ class Portfolio extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			category: 'Qualifications'
+			category: 'Proffesional'
 		}
 	}
 
@@ -45,8 +42,8 @@ class Portfolio extends React.Component {
  render() {
  	return (
           <div>
-          <Button 
-          currentSelection={this.state.category} text={'Proffesional'} onClick={this.changePortfolioCategory}/><Button currentSelection={this.state.category} text={'Qualifications'} onClick={this.changePortfolioCategory}/>
+          <Button
+          text={'Proffesional'} active={this.state.category==='Proffesional'} onClick={this.changePortfolioCategory}/><Button text={'Qualifications'} active={this.state.category==='Qualifications'} onClick={this.changePortfolioCategory}/>
 	      {this.state.category === 'Proffesional' ?
 	      <div>
 	      <PortfolioItem date={'October 2019-present'} 
@@ -54,7 +51,7 @@ class Portfolio extends React.Component {
 	        title={'Tree Tents International'} 
 	        location={'Brighton'} 
 	        body={[<p>Core responsibility is to help the company simplify business processes and increase manufacturing capacity. Also assisting in product design and assembly. <strong>React, Python, Odoo, Ubuntu-server, Trello.</strong></p>,
-	        <ul>
+	        <ul className="pl3">
 	          <li>Identified, installed and adapted open source MRP/CRM software to simplify operations.</li>
 	          <li>Installed host server and facilitated transition to new system.</li>
 	          <li>Developing front-end sales and warehouse tools to interface with MRP system.</li>
@@ -64,7 +61,7 @@ class Portfolio extends React.Component {
             title={'Arrk Group'} 
             location={'Manchester'} 
             body={[<p>Software design, development and data analysis. Product research and business strategy. <strong>Swift, Kotlin, Python, SQL, AWS, PowerBI, CircleCI, JIRA.</strong> Achievements include:</p>,
-             <ul>
+             <ul className="pl3">
              <li>Instrumental in the design, delivery and continual development of a B2C lifestyle and finance platform, currently with 900,000+ users. Worked closely with two others to win the contract for this project worth several million pounds.</li>
              <li>Helped design and implement a platform-wide analytics and data strategy.</li>
              <li>Constantly collaborated with a geographically distributed and cross-cultural team. Favoured openness and encouraged a culture of consensus decision making.</li>
@@ -74,10 +71,10 @@ class Portfolio extends React.Component {
              </ul>]} />
 	      <PortfolioItem date={'Jan--March 2017'}
 	      	role={'Technical Project Coordinator'} 
-            title={'Brighton \& Hove Energy Services'} 
+            title={'Brighton & Hove Energy Services'} 
             location={'Brighton'} 
             body={[<p>Graduate internship.<strong> Excel, CiviCRM, Python, GIMP.</strong>  Achievements and responsibilies included:</p>,
-            <ul>
+            <ul className="pl3">
             	<li>Researched and drafted project proposals.</li>
             	<li>Maintained financial models.</li>
             	<li>Coordinated contractors.</li>
@@ -90,40 +87,40 @@ class Portfolio extends React.Component {
           	
             title={'Machine Learning by Stanford University'} 
             location={'Coursera, Online'} 
-            body={[<p>Currently enjoying Andrew Ng's Machine Learning course on Coursera. Submitting my assignments in Python using Jupyter notebook thanks you @@@@ for converting the coursework! Taking my time to comprehend and check proofs. I've missed writing equations.</p>,
-             <ul className="list">
-             <li>✅ Week 1: Linear Regression with one variable</li>
-             <li>✅ Week 2: Linear Regression with Multiple Variables</li>
-             <li>✅ Week 3: Logistic Regression, Regularisation</li>
-             <li>✅ Week 4: Neural Networks Intro </li>
-             <li>✅ Week 5: Training Neural Networks</li>
-             <li>📚 Week 6: Debugging, Duiagnostics, System Design</li>
-             <li>⬜️ Week 7: Support Vector Machines</li>
-             <li>⬜️ Week 8: Unsupervised Learning, Dimensionality Reduction</li>
-             <li>⬜️ Week 9: Anomaly Detection, Recommender Systems</li>
-             <li>⬜️ Week 10: Large Scale Machine Learning</li>
-             <li>⬜️ Week 11: Application Example: Photo OCR</li>
+            body={[<p>Currently enjoying Andrew Ng's Machine Learning course on Coursera. Submitting my assignments in Python using Jupyter notebook. Thank you @dibgerge for <a href="https://github.com/dibgerge/ml-coursera-python-assignments" target="_blank" rel="noopener noreferrer">re-writing all the programming assignments in Python</a> <span role="img" aria-label="hands clasped">🙏</span>. I'm taking my time to comprehend and check proofs. I've missed writing equations.</p>,
+             <ul className="list pl0">
+             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 1: Linear Regression with one variable</li>
+             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 2: Linear Regression with Multiple Variables</li>
+             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 3: Logistic Regression, Regularisation</li>
+             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 4: Neural Networks Intro </li>
+             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 5: Training Neural Networks</li>
+             <li className="pv1"><span role="img" aria-label="in progress">📚</span> Week 6: Debugging, Diagnostics, System Design</li>
+             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 7: Support Vector Machines</li>
+             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 8: Unsupervised Learning, Dimensionality Reduction</li>
+             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 9: Anomaly Detection, Recommender Systems</li>
+             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 10: Large Scale Machine Learning</li>
+             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 11: Application Example: Photo OCR</li>
 
              </ul>]} />
             <PortfolioItem date={'June-August 2018'} 
             title={'Blockchain Developer Program 2018'} 
             location={'Consensys Academy, Online'} 
             detail={'Grade: 76.1'}
-            body={<p>Smart Contract Development and Ethereum fundamentals. The course introduced key tools, security best practises and other aspects of dApp development. <a href="https://github.com/chromebanana/battleships-ethereum">My submission</a> enabled play (and betting) of turn based games using the Ethereum blockchain. My Smart Contract was deployed to the Ropsten Test Network.</p>
+            body={<p>Smart Contract Development and Ethereum fundamentals. The course introduced key tools, security best practises and other aspects of dApp development. <a href="https://github.com/chromebanana/battleships-ethereum">My submission</a> enabled play (and betting) of turn-based games using the Ethereum blockchain. My Smart Contract was deployed to the Ropsten Test Network.</p>
              } />
              <PortfolioItem date={'2012-2018'} 
             title={'Master of Physics'} 
             location={'University of Sussex'} 
             detail={'First Class, MPhys (Hons).'}
-            body={<ul>
-            	<li>Received faculty award for 'Outstanding Improvement' in year 2.</li>
-            	<li>Excelled in the complex mathematics required by theoretical modules.</li>
-            	<li>Routinely used Python for data analysis. Also sat a C++ module to study OOP.</li>
-            	<li>Final year project was to design and build a PID control system for a laser: Circuit building, 32-bit microcontroller programming in C and creating a UI in Labview.</li>
-            	<li>Developed solid experimental and analytical skills and a ruthless attention to detail.</li>
-            	<li>Produced eloquently written reports in Latex. Awarded 95% for final year presentation.</li>
-            	<li>Became adept at identifying relevant physical principles involved in a problem and employing mathematical techniques to reach a clear solution.</li>
-            	<li>Audited modules on HCI and web development.</li>
+            body={<ul className="pl3">
+            	<li className="pv1">Received faculty award for 'Outstanding Improvement' in year 2 <span className="inline" role="img" aria-label="fire">🔥</span>.</li>
+            	<li className="pv1">Excelled in the complex mathematics required by theoretical modules.</li>
+            	<li className="pv1">Routinely used Python for data analysis. Also sat a C++ module to study OOP.</li>
+            	<li className="pv1">Final year project was to design and build a PID control system for a laser: Circuit building, 32-bit microcontroller programming in C and creating a UI in Labview.</li>
+            	<li className="pv1">Developed solid experimental and analytical skills and a ruthless attention to detail.</li>
+            	<li className="pv1">Produced eloquently written reports in Latex. Awarded 95% for final year presentation.</li>
+            	<li className="pv1">Became adept at identifying relevant physical principles involved in a problem and employing mathematical techniques to reach a clear solution.</li>
+            	<li className="pv1">Audited modules on HCI and web development.</li>
             	</ul>
              } />
              <PortfolioItem date={'2011-2012'} 
