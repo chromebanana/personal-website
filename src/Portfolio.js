@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			category: 'Proffesional'
+			category: 'Profesional'
 		}
 	}
 
@@ -43,8 +43,8 @@ class Portfolio extends React.Component {
  	return (
           <div>
           <Button
-          text={'Proffesional'} active={this.state.category==='Proffesional'} onClick={this.changePortfolioCategory}/><Button text={'Qualifications'} active={this.state.category==='Qualifications'} onClick={this.changePortfolioCategory}/>
-	      {this.state.category === 'Proffesional' ?
+          text={'Profesional'} active={this.state.category==='Profesional'} onClick={this.changePortfolioCategory}/><Button text={'Qualifications'} active={this.state.category==='Qualifications'} onClick={this.changePortfolioCategory}/>
+	      {this.state.category === 'Profesional' ?
 	      <div>
 	      <PortfolioItem date={'October 2019-present'} 
 	      	role={'Production Supervisor, Developer'}
@@ -69,7 +69,7 @@ class Portfolio extends React.Component {
              <li>Learnt new programming languages on the job and produced production-ready code - often working on multiple platforms at once.</li>
              <li>Facilitated regular workshops with customers and staff - creating a space for collaboration and active participation with a sensitivity towards individual needs.</li>
              </ul>]} />
-	      <PortfolioItem date={'Jan--March 2017'}
+	      <PortfolioItem date={'Jan-March 2017'}
 	      	role={'Technical Project Coordinator'} 
             title={'Brighton & Hove Energy Services'} 
             location={'Brighton'} 
@@ -89,7 +89,7 @@ class Portfolio extends React.Component {
             location={'Coursera, Online'} 
             body={[<p>Currently enjoying Andrew Ng's Machine Learning course on Coursera. Submitting my assignments in Python using Jupyter notebook. Thank you @dibgerge for <a href="https://github.com/dibgerge/ml-coursera-python-assignments" target="_blank" rel="noopener noreferrer">re-writing all the programming assignments in Python</a> <span role="img" aria-label="hands clasped">🙏</span>. I'm taking my time to comprehend and check proofs. I've missed writing equations.</p>,
              <ul className="list pl0">
-             <li>Week 1: Linear Regression with one variable <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
+             <li>Week 1: Linear Regression with One Variable <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
              <li>Week 2: Linear Regression with Multiple Variable <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
              <li>Week 3: Logistic Regression, Regularisation <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
              <li>Week 4: Neural Networks Intro <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
@@ -106,7 +106,9 @@ class Portfolio extends React.Component {
             title={'Blockchain Developer Program 2018'} 
             location={'Consensys Academy, Online'} 
             detail={'Grade: 76.1'}
-            body={<p>Smart Contract Development and Ethereum fundamentals. The course introduced key tools, security best practises and other aspects of dApp development. <a href="https://github.com/chromebanana/battleships-ethereum">My submission</a> enabled play (and betting) of turn-based games using the Ethereum blockchain. My Smart Contract was deployed to the Ropsten Test Network.</p>
+            body={<p>Smart contract development and Ethereum fundamentals. 
+                The course introduced key tools, security best practises and other aspects of dApp development. 
+                <a href="https://github.com/chromebanana/battleships-ethereum">My submission</a> enabled play (and betting) of turn-based games using the Ethereum blockchain. My smart contract was deployed to the Ropsten Test Network.</p>
              } />
              <PortfolioItem date={'2012-2018'} 
             title={'Master of Physics'} 
