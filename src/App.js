@@ -21,7 +21,7 @@ class App extends Component {
     const { route } = this.state;
  // TODO: https://en.wikipedia.org/wiki/Centrifugal_governor
   return (
-    <div className="App mw7 w-90 ph3 center">
+    <div className="App mw7 w-90 ph3 pv4 center">
         <Navigation onRouteChange={this.onRouteChange}/>
 
       {this.state.route === 'home' ?
@@ -46,7 +46,7 @@ class App extends Component {
           <h2>Tools & Technical Skills</h2>
           <p className="mb1">With profesional experience: Python, React, Swift, SQL, Data Analysis and Reporting, AWS, Git.</p>
           <p className="mt0">Academic and hobby: C, C++, Machine Learning, Smart Contracts, Systems Thinking, 32-bit microcontrollers, TouchDesigner, Processing.</p>
-          <h2>Human Skills</h2><p>Workshop facilitation, Design thinking, Free-association narrative interviews, clear and confident presentation style, kind, honest and direct.</p>
+          <h2>Human Skills</h2><p>Workshop facilitation, design thinking, free-association narrative interviews, clear and confident presentation style, kind, honest and direct.</p>
           <h2>Relevant Interests</h2><p>Federeated Learning, Data Fusion using Baysian Inference, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Cooperatives, Power Dynamics, Non-violent Communication, Wallace & Gromit.</p>
           </div> 
         : ( route === 'portfolio' ? 
