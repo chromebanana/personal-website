@@ -30,7 +30,7 @@ class App extends Component {
         <h2>Full Stack Developer.</h2>
         
         </div>
-        : ( route === 'bio' ? <div className="">
+        : ( route === 'bio' ? <div>
           <h2>About Me</h2><p>
           Enthusiastic team player pursuing a career at the intersection of AI and sustainability.
           I'm motivated by technology's capacity to accelerate social and environmental change. 

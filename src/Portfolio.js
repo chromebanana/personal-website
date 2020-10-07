@@ -89,17 +89,17 @@ class Portfolio extends React.Component {
             location={'Coursera, Online'} 
             body={[<p>Currently enjoying Andrew Ng's Machine Learning course on Coursera. Submitting my assignments in Python using Jupyter notebook. Thank you @dibgerge for <a href="https://github.com/dibgerge/ml-coursera-python-assignments" target="_blank" rel="noopener noreferrer">re-writing all the programming assignments in Python</a> <span role="img" aria-label="hands clasped">🙏</span>. I'm taking my time to comprehend and check proofs. I've missed writing equations.</p>,
              <ul className="list pl0">
-             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 1: Linear Regression with one variable</li>
-             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 2: Linear Regression with Multiple Variables</li>
-             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 3: Logistic Regression, Regularisation</li>
-             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 4: Neural Networks Intro </li>
-             <li className="pv1"><span role="img" aria-label="done">✅</span> Week 5: Training Neural Networks</li>
-             <li className="pv1"><span role="img" aria-label="in progress">📚</span> Week 6: Debugging, Diagnostics, System Design</li>
-             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 7: Support Vector Machines</li>
-             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 8: Unsupervised Learning, Dimensionality Reduction</li>
-             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 9: Anomaly Detection, Recommender Systems</li>
-             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 10: Large Scale Machine Learning</li>
-             <li className="pv1"><span role="img" aria-label="not done">⬜️</span> Week 11: Application Example: Photo OCR</li>
+             <li>Week 1: Linear Regression with one variable <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
+             <li>Week 2: Linear Regression with Multiple Variable <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
+             <li>Week 3: Logistic Regression, Regularisation <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
+             <li>Week 4: Neural Networks Intro <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
+             <li>Week 5: Training Neural Networks <span className="inline" role="img" aria-label="check mark">✔︎</span></li>
+             <li>Week 6: Debugging, Diagnostics, System Design</li>
+             <li>Week 7: Support Vector Machines</li>
+             <li>Week 8: Unsupervised Learning, Dimensionality Reduction</li>
+             <li>Week 9: Anomaly Detection, Recommender Systems</li>
+             <li>Week 10: Large Scale Machine Learning</li>
+             <li>Week 11: Application Example: Photo OCR</li>
 
              </ul>]} />
             <PortfolioItem date={'June-August 2018'} 
