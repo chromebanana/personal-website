@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navigation } from './Navigation';
 import Portfolio from './Portfolio';
 import { Contact } from './Contact';
+import me from './images/me.jpeg'
 
 import './App.css';
 
@@ -25,10 +26,14 @@ class App extends Component {
         <Navigation onRouteChange={this.onRouteChange}/>
 
       {this.state.route === 'home' ?
-        <div>
+        <div className="flex flex-wrap">
+        <div className="w-60-ns">
         <h1>William Cragg</h1>
-        <h2>Full Stack Developer.</h2>
+        <h2 className="mb4">Full Stack Developer.</h2>
+        </div>
+        <img className="w-40-ns w-70 mt2" src={me} alt="Photograph of William Cragg"/>
         
+       
         </div>
         : ( route === 'bio' ? <div>
           <h2>About Me</h2><p>
