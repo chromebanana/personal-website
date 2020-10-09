@@ -44,10 +44,10 @@ class App extends Component {
             <li>Mostly using Python and React.</li>
           </ul>
           <h2>Tools & Technical Skills</h2>
-          <p className="mb1">With profesional experience: Python, React, Swift, SQL, Data Analysis and Reporting, AWS, Git.</p>
+          <p className="mb1">With profesional experience: Python, React, Swift, SQL, Data Analysis and Reporting, AWS, PowerBI, Git.</p>
           <p className="mt0">Academic and hobby: C, C++, Machine Learning, Smart Contracts, Systems Thinking, 32-bit microcontrollers, TouchDesigner, Processing.</p>
-          <h2>Human Skills</h2><p>Workshop facilitation, design thinking, free-association narrative interviews, clear and confident presentation style, kind, honest and direct.</p>
-          <h2>Relevant Interests</h2><p>Federeated Learning, Data Fusion using Baysian Inference, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Cooperatives, Power Dynamics, Non-violent Communication, Wallace & Gromit.</p>
+          <h2>Human Skills</h2><p>Workshop facilitation, design thinking, free-association narrative interviews, pair progamming, clear and confident presentation style, kind, honest and direct.</p>
+          <h2>Relevant Interests</h2><p>Federeated Learning, Data Fusion using Baysian Inference, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Cooperatives, Power Dynamics, Non-violent Communication, Identifying and Challenging Assumptions, Wallace & Gromit.</p>
           </div> 
         : ( route === 'portfolio' ? 
           <Portfolio/>

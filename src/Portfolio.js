@@ -67,18 +67,20 @@ class Portfolio extends React.Component {
              <li>Constantly collaborated with a geographically distributed and cross-cultural team. Favoured openness and encouraged a culture of consensus decision making.</li>
              <li>Incorporated ethnographic research and user testing into a rapid value proposition design process. Used a clear, confident presentation style to update key stakeholders on a weekly basis and build trust in my team's methods.</li>
              <li>Learnt new programming languages on the job and produced production-ready code - often working on multiple platforms at once.</li>
+             <li>Analysed platform data to answer the design team’s queries about user behaviour and debug problems that were trending on our support desk.</li>
+             <li>Conducted usability tests when new UI elements were introduced.</li>
              <li>Facilitated regular workshops with customers and staff - creating a space for collaboration and active participation with a sensitivity towards individual needs.</li>
              </ul>]} />
 	      <PortfolioItem date={'Jan-March 2017'}
 	      	role={'Technical Project Coordinator'} 
             title={'Brighton & Hove Energy Services'} 
             location={'Brighton'} 
-            body={[<p>Graduate internship.<strong> Excel, CiviCRM, Python, GIMP.</strong>  Achievements and responsibilies included:</p>,
+            body={[<p>Graduate internship giving me a thorough understanding of the problems facing energy consumers and the need to disrupt and dis-aggregate the UK energy market.<strong> Excel, CiviCRM, Python, GIMP.</strong>  Achievements and responsibilies included:</p>,
             <ul className="pl3">
+                <li>Analysed energy generation and consumption data from various renewable sources to feedback to customers.</li>
             	<li>Researched and drafted project proposals.</li>
             	<li>Maintained financial models.</li>
             	<li>Coordinated contractors.</li>
-            	<li>Analysed and reported energy generation data.</li>
             	<li>Secured a customer and delivered an energy saving project.</li>
             	<li>Produced customer and public facing infographics to communicate energy savings and investment value.</li>
             </ul>]} />
