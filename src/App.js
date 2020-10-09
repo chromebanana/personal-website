@@ -22,16 +22,17 @@ class App extends Component {
     const { route } = this.state;
  // TODO: https://en.wikipedia.org/wiki/Centrifugal_governor
   return (
-    <div className="App mw7 w-90 ph3 pv4 center">
+    <div className="App mw7 w-90 ph3 pv4-l pv4-m center">
         <Navigation onRouteChange={this.onRouteChange}/>
 
       {this.state.route === 'home' ?
-        <div className="flex flex-wrap">
-        <div className="w-60-ns">
-        <h1>William Cragg</h1>
-        <h2 className="mb4">Full Stack Developer.</h2>
-        </div>
-        <img className="w-40-ns w-70 mt2" src={me} alt="Photograph of William Cragg"/>
+      
+        <div>
+        <h1 className="mt1 mt3-l mt3-m">William Cragg</h1>
+        <h2>Full Stack Developer</h2>
+        <h2 className="mb4">First Class Physics Masters</h2>
+        
+        <img className="w-50-l w-50-m w-90" src={me} alt="Photograph of William Cragg"/>
         
        
         </div>
@@ -39,7 +40,7 @@ class App extends Component {
           <h2>About Me</h2><p>
           Enthusiastic team player pursuing a career at the intersection of AI and sustainability.
           I'm motivated by technology's capacity to accelerate social and environmental change. 
-          I'd like to work in a high performance organisation focused on solving societally important problems <span role="img" aria-label="octopus">🐙 </span> 
+          I'd like to work in a high performance organisation focused on solving societally important problems.
           A job that allows me to flex my mathematics muscles is a must <span role="img" aria-label="muscle flex">💪</span></p>
            <strong> I'm particularly interested in working on industrial scale applications of privacy-preserving machine learning, data fusion or multi-agent modelling.</strong> 
           <ul className="pl3">
