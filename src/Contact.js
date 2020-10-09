@@ -7,6 +7,7 @@ export const Contact = ({ }) => {
       I'd love feedback on this website, particularly regarding responsiveness or browser support. 
       Im currently building the backend for a 'contact form' using Django. 
       If you think this is the wrong thing to use I'd like to know why!</p>
+      <a href="mailto:wstc@riseup.net">wstc@riseup.net</a>
       <footer className="pv4 tc">
       <a className="link dim gray dib h2 w2 br-100 mr3 pa2 ba b--black-40" href="https://twitter.com/topchromebanana/" target="_blank" rel="noopener noreferrer" title="Twitter Profile">
         <svg data-icon="twitter" viewBox="0 0 32 32" styles="fill:currentcolor">

@@ -34,14 +34,14 @@ class App extends Component {
           <h2>About Me</h2><p>
           Enthusiastic team player pursuing a career at the intersection of AI and sustainability.
           I'm motivated by technology's capacity to accelerate social and environmental change. 
-          I'd like to work in a high performance organisation focused on solving societally important problems. 
-          A job that allows me to flex my mathematics muscles is a must <span role="img" aria-label="muscle flex">💪</span>.</p>
+          I'd like to work in a high performance organisation focused on solving societally important problems <span role="img" aria-label="octopus">🐙 </span> 
+          A job that allows me to flex my mathematics muscles is a must <span role="img" aria-label="muscle flex">💪</span></p>
            <strong> I'm particularly interested in working on industrial scale applications of privacy-preserving machine learning, data fusion or multi-agent modelling.</strong> 
           <ul className="pl3">
-            <li>I'm a physicist with experience in all aspects of software production.</li>
-            <li>Strong qualitative and quantitative research tool-set.</li>
-            <li>Thorough, diligent and thoughtful.</li>
-            <li>Mostly using Python and React.</li>
+            <li>I'm a physicist with experience in all aspects of software production</li>
+            <li>Strong qualitative and quantitative research tool-set</li>
+            <li>Thorough, diligent and thoughtful</li>
+            <li>Mostly using Python and React</li>
           </ul>
           <h2>Tools & Technical Skills</h2>
           <p className="mb1">With profesional experience: Python, React, Swift, SQL, Data Analysis and Reporting, AWS, PowerBI, Git.</p>
