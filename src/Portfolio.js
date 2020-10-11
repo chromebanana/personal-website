@@ -50,7 +50,7 @@ class Portfolio extends React.Component {
 	      	role={'Production Supervisor, Developer'}
 	        title={'Tree Tents International'} 
 	        location={'Brighton'} 
-	        body={[<p>Core responsibility is to help the company simplify business processes and increase manufacturing capacity. Also assisting in product design and assembly. <strong>React, Python, Odoo, Ubuntu-server, Trello.</strong></p>,
+	        body={[<p>Core responsibility is to help the company simplify business processes and increase manufacturing capacity. Also assisting in product design and assembly. <strong>React, Python, Odoo, PostgreSQL, Ubuntu-server, Trello.</strong></p>,
 	        <ul className="pl3">
 	          <li>Identified, installed and adapted open source MRP/CRM software to simplify operations</li>
 	          <li>Installed host server and facilitated transition to new system</li>
@@ -64,12 +64,13 @@ class Portfolio extends React.Component {
              <ul className="pl3">
              <li>Instrumental in the design, delivery and continual development of a B2C lifestyle and finance platform, currently with 900,000+ users. Worked closely with two others to win the contract for this project worth several million pounds</li>
              <li>Helped design and implement a platform-wide analytics and data strategy</li>
+             <li>Learnt new programming languages on the job and produced robust, fault-tolerant software-working across the stack and on multiple platforms</li>
+             <li>Authored developer guides to ensure clean and consistent data in our pipeline</li>
              <li>Constantly collaborated with a geographically distributed and cross-cultural team. Favoured openness and encouraged a culture of consensus decision making</li>
              <li>Incorporated ethnographic research and user testing into a rapid value proposition design process. Used a clear, confident presentation style to update key stakeholders on a weekly basis and build trust in my team's methods</li>
-             <li>Learnt new programming languages on the job and produced production-ready code - often working on multiple platforms at once</li>
              <li>Analysed platform data to answer the design team’s queries about user behaviour and debug problems that were trending on our support desk</li>
              <li>Conducted usability tests when new UI elements were introduced</li>
-             <li>Facilitated regular workshops with customers and staff - creating a space for collaboration and active participation with a sensitivity towards individual needs</li>
+             <li>Facilitated regular workshops with customers and staff with a sensitivity towards individual needs - creating a space for collaboration and active participation</li>
              </ul>]} />
 	      <PortfolioItem date={'Jan-March 2017 · 3 months'}
 	      	role={'Technical Project Coordinator'} 

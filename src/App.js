@@ -32,7 +32,7 @@ class App extends Component {
         <h2>Full Stack Developer</h2>
         <h2 className="mb4">First Class Physics Masters</h2>
         
-        <img className="w-50-l w-50-m w-90" src={me} alt="Photograph of William Cragg"/>
+        <img className="w-50-l w-50-m w-90 mb4" src={me} alt="Photograph of William Cragg"/>
         
        
         </div>
@@ -50,10 +50,10 @@ class App extends Component {
             <li>Mostly using Python and React</li>
           </ul>
           <h2>Tools & Technical Skills</h2>
-          <p className="mb1">With profesional experience: Python, React, Swift, SQL, Data Analysis and Reporting, AWS, PowerBI, Git.</p>
-          <p className="mt0">Academic and hobby: C, C++, Machine Learning, Smart Contracts, Systems Thinking, 32-bit microcontrollers, TouchDesigner, Processing.</p>
-          <h2>Human Skills</h2><p>Workshop facilitation, design thinking, free-association narrative interviews, pair progamming, clear and confident presentation style, kind, honest and direct.</p>
-          <h2>Relevant Interests</h2><p>Federeated Learning, Data Fusion using Baysian Inference, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Cooperatives, Power Dynamics, Non-violent Communication, Identifying and Challenging Assumptions, Wallace & Gromit.</p>
+          <p className="mv1">With profesional experience: Python, React, Swift, SQL, Data Analysis and Reporting, AWS, PowerBI, Git.</p>
+          <p className="mv2 pt1">Academic and hobby: C, C++, Machine Learning, Smart Contracts, Systems Thinking, 32-bit microcontrollers, TouchDesigner, Processing.</p>
+          <h2>Human Skills</h2><p>Workshop facilitation, design thinking, free-association narrative interviews, pair progamming, welcoming of criticism, clear and confident presentation style, kind, honest and direct.</p>
+          <h2>Relevant Interests</h2><p>Federeated Learning, Data Fusion using Baysian Inference, DLTs, Design Theory, Generative Art, Multi-Agent Systems, Cooperatives, Power Dynamics, Non-violent Communication, Wallace & Gromit.</p>
           </div> 
         : ( route === 'portfolio' ? 
           <Portfolio/>
