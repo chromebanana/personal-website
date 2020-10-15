@@ -41,7 +41,7 @@ class Portfolio extends React.Component {
           text={'Professional'} active={this.state.category==='Professional'} onClick={this.changePortfolioCategory}/><Button text={'Qualifications'} active={this.state.category==='Qualifications'} onClick={this.changePortfolioCategory}/>
           {this.state.category === 'Professional' ?
           <div>
-          <PortfolioItem date={'October 2019-present · 1 year 1 month'} 
+          <PortfolioItem date={'October 2019–present · 1 year 1 month'} 
             role={'Production Supervisor, Developer'}
             title={'Tree Tents International'} 
             location={'Brighton'} 
@@ -51,7 +51,7 @@ class Portfolio extends React.Component {
               <li>Installed host server and facilitated transition to new system</li>
               <li>Developing front-end sales and warehouse tools to interface with MRP system</li>
             </ul>]} />
-          <PortfolioItem date={'May 2017-September 2019 · 2 years 5 months'} 
+          <PortfolioItem date={'May 2017–September 2019 · 2 years 5 months'} 
             role={'Consultant, Developer'}
             title={'Arrk Group'} 
             location={'Manchester'} 
@@ -65,9 +65,9 @@ class Portfolio extends React.Component {
              <li>Incorporated ethnographic research and user testing into a rapid value proposition design process. Used a clear, confident presentation style to update key stakeholders on a weekly basis and build trust in my team's methods</li>
              <li>Analysed platform data to answer the design team’s queries about user behaviour and debug problems that were trending on our support desk</li>
              <li>Conducted usability tests when new UI elements were introduced</li>
-             <li>Facilitated regular workshops with customers and staff with a sensitivity towards individual needs - creating a space for collaboration and active participation</li>
+             <li>Facilitated regular workshops with customers and staff with a sensitivity towards individual needs—creating a space for collaboration and active participation</li>
              </ul>]} />
-          <PortfolioItem date={'Jan-March 2017 · 3 months'}
+          <PortfolioItem date={'Jan–March 2017 · 3 months'}
             role={'Technical Project Coordinator'} 
             title={'Brighton & Hove Energy Services'} 
             location={'Brighton'} 
@@ -87,7 +87,7 @@ class Portfolio extends React.Component {
             location={'Coursera, Online'} 
             body={[<p>Currently enjoying Andrew Ng's Machine Learning course on Coursera. Submitting my assignments in Python using Jupyter notebook. Thank you @dibgerge for <a href="https://github.com/dibgerge/ml-coursera-python-assignments" target="_blank" rel="noopener noreferrer">re-writing all the programming assignments in Python</a> <span role="img" aria-label="hands clasped">🙏</span>. I'm taking my time to comprehend and check proofs. I've missed writing equations.</p>,
              <p>Topics include regressions, neural networks, unsupervised learning, diagnostics and system design.</p>]} />
-            <PortfolioItem date={'June-August 2018'} 
+            <PortfolioItem date={'June–August 2018'} 
             title={'Blockchain Developer Program 2018'} 
             location={'Consensys Academy, Online'} 
             detail={'Grade: 76.1'}
@@ -95,7 +95,7 @@ class Portfolio extends React.Component {
                 The course introduced key tools, security best practises and other aspects of dApp development. 
                 My <a href="https://github.com/chromebanana/battleships-ethereum">submission</a> enabled play (and betting) of turn-based games using the Ethereum blockchain. My smart contract was deployed to the Ropsten Test Network.</p>
              } />
-             <PortfolioItem date={'2012-2018'} 
+             <PortfolioItem date={'2012–2018'} 
             title={'Master of Physics'} 
             location={'University of Sussex'} 
             detail={'First Class, MPhys (Hons)'}
@@ -110,12 +110,12 @@ class Portfolio extends React.Component {
                 <li className="pv1">Audited modules on HCI and web development</li>
                 </ul>
              } />
-             <PortfolioItem date={'2011-2012'} 
+             <PortfolioItem date={'2011–2012'} 
             title={'Physics Foundation Year'} 
             location={'University of Manchester'} 
             detail={'71.25% Average'}
              />
-             <PortfolioItem date={'Jan-September 2011'} 
+             <PortfolioItem date={'Jan–September 2011'} 
             title={'Polymaths - Certificate of the Institute of Mathematics and its Applications'} 
             location={'University of Bolton'} 
             
