@@ -59,7 +59,7 @@ class Portfolio extends React.Component {
              <ul className="pl3">
              <li>Instrumental in the design, delivery and continual development of a B2C lifestyle and finance platform, currently with 900,000+ users. Worked closely with two others to win the contract for this project worth several million pounds</li>
              <li>Helped design and implement a platform-wide analytics and data strategy</li>
-             <li>Learnt new programming languages on the job and produced robust, fault-tolerant software-working across the stack and on multiple platforms</li>
+             <li>Learnt new programming languages on the job and produced robust, fault-tolerant software—working across the stack and on multiple platforms</li>
              <li>Authored developer guides to ensure clean and consistent data in our pipeline</li>
              <li>Constantly collaborated with a geographically distributed and cross-cultural team. Favoured openness and encouraged a culture of consensus decision making</li>
              <li>Incorporated ethnographic research and user testing into a rapid value proposition design process. Used a clear, confident presentation style to update key stakeholders on a weekly basis and build trust in my team's methods</li>
